@@ -2,12 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import StyledInput from '../components/styled-input';
 import StyledButton from '../components/styled-button';
-import { router } from 'expo-router';
+import { Link, router } from 'expo-router';
 
 export default function Login() {
 
     const handleLogin = () => {
-        router.replace('home')
+        router.replace('teste')
     }
 
   return (
@@ -23,6 +23,7 @@ export default function Login() {
        onClick={(handleLogin)}
        />
       <StatusBar style="auto" />
+      <Link href='/home'>Voltar para home</Link>
     </View>
   );
 }
